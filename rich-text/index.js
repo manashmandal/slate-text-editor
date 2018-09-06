@@ -5,6 +5,7 @@ import React from 'react'
 import initialValue from './value.json'
 import { isKeyHotkey } from 'is-hotkey'
 import { Button, Icon, Toolbar } from '../components'
+import  Images  from '../image/ImageComponent'
 
 /**
  * Define the default node type.
@@ -85,7 +86,7 @@ class RichTextExample extends React.Component {
           {this.renderBlockButton('block-quote', 'format_quote')}
           {this.renderBlockButton('numbered-list', 'format_list_numbered')}
           {this.renderBlockButton('bulleted-list', 'format_list_bulleted')}
-          {this.renderBlockButton('image', 'image')}
+          <Images></Images>
         </Toolbar>
         <Editor
           spellCheck
